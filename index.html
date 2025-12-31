@@ -926,7 +926,7 @@
 
             function updateButtonSearch(button) {
               const cluster = button.cluster || [];
-              const text = [button.category || "", ...cluster].join(" ").toLowerCase();
+              const text = cluster.length === 1 ? cluster[0].toLowerCase() : "";
               button.dataset.search = text;
               const wrapper = button.closest(".cluster-item");
               if (wrapper) {
