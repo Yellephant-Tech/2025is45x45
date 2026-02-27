@@ -1,7 +1,8 @@
 <html>
     <!-- 2025 by Thomas Colthurst -->
     <!-- Original at https://thomaswc.com/2025.html -->
-    <title>2025</title>
+    <!-- fork of Vessenes's version: https://vessenes.github.io/2025is45x45/ -->
+    <title>150</title>
     <style>
         :root {
             --bg: #f6f1e7;
@@ -592,7 +593,7 @@
 <div id="app">
     <header class="topbar">
         <div class="topbar-content">
-            <div class="title">Make 45 groups of 45!</div>
+            <div class="title">Make 15 groups of 10!</div>
             <div class="shortcuts">
                 <span class="shortcut-key"><span class="keycap">R</span> Hold to reset</span>
                 <span class="shortcut-key"><span class="keycap">S</span> Shuffle</span>
@@ -631,7 +632,7 @@
         // 1) Don't penalize already guessed.
         
         // Globals
-        const M = 45;  // Board size
+        const M = 15;  // Board size
             
         var score = 0;
         var mistakes = 0;
@@ -646,8 +647,8 @@
         
         var cats = {};
             
-            // #1.  Censored:  Chromium (Google Project)
-            cats["Elements"] = ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminium", "Silicon", "Phosphorous", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium"];
+            // #1.
+            cats["Fire Tower", "Spy Alley", "Dungeons & Dragons Starter Set", "Small World", "Patchwork", "Lord of the Rings: Duel for Middle Earth", "Inhuman Circumstances", "Splendor", "Life", "Cat in a Box"];
             
             // #2
             cats["African Countries"] = ["Nigeria", "Ethiopia", "Egypt", "DR Congo", "Tanzania", "South Africa", "Kenya", "Sudan", "Uganda", "Algeria", "Morocco", "Angola", "Ghana", "Mozambique", "Madagascar", "Ivory Coast", "Cameroon", "Niger", "Mali", "Burkina Faso", "Malawi", "Zambia", "Chad", "Somalia", "Senegal", "Zimbabwe", "Guinea", "Benin", "Rwanda", "Burundi", "Tunisia", "South Sudan", "Togo", "Sierra Leone", "Libya", "Republic of the Congo", "Liberia", "Central African Republic", "Mauritania", "Eritrea", "Namibia", "Gambia", "Gabon", "Botswana", "Lesotho"];
