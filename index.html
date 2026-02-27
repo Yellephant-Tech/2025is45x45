@@ -1147,10 +1147,10 @@
               const wordDict = new Map();
               // Check that each category has 45 entries.
               for (const [key, value] of Object.entries(cats)) {
-                if (value.length < 45) {
+                if (value.length < 15) {
                   alert(`Entry for ${key} has length ${value.length}`);
                 }
-                for (let i = 0; i < 45; i++) {
+                for (let i = 0; i < 15; i++) {
                   wordlist.push([value[i], key]);
                   if (wordDict.has(value[i])) {
                       alert(`Duplicate word ${value[i]}`);
