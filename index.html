@@ -632,7 +632,7 @@
         // 1) Don't penalize already guessed.
         
         // Globals
-        const M = 14;  // Board size
+        const M = 10;  // Board size
             
         var score = 0;
         var mistakes = 0;
@@ -1000,7 +1000,7 @@
               firstbut.addEventListener("animationend", () => {
                 firstbut.classList.remove("match-burst");
               }, { once: true });
-              if (firstbut.cluster.length == 45) {
+              if (firstbut.cluster.length == 10) {
                 finishCategory(firstbut);
               } else {
                 moveClusterToPriority(firstbut);
@@ -1426,7 +1426,7 @@
                                 return;
                             }
                             const button = createClusterButton(block.category, block.cluster);
-                            if (block.cluster.length == 45) {
+                            if (block.cluster.length == 10) {
                                 button.disabled = true;
                                 button.classList.add("completed");
                                 button.style.background = stringToLightColor(block.category);
